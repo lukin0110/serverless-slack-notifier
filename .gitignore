@@ -38,3 +38,10 @@ jspm_packages
 
 # JetBrains
 .idea
+
+#SERVERLESS
+admin.env
+.env
+
+#Ignore _meta folder
+_meta
