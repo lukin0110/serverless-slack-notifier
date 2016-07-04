@@ -12,11 +12,22 @@
     "excludePatterns": []
   },
   "endpoints": [],
-  "events": [],
+  "events": [
+    {
+      "name": "s3BucketEvents",
+      "type": "s3",
+      "config": {
+        "bucket": "${eventBucket}",
+        "bucketEvents": ["s3:ObjectCreated:*"]
+      }
+    }
+  ],
   "environment": {
     "SERVERLESS_PROJECT": "${project}",
     "SERVERLESS_STAGE": "${stage}",
-    "SERVERLESS_REGION": "${region}"
+    "SERVERLESS_REGION": "${region}",
+
+    "SLACK_WEBHOOK": "${slack_webhook}"
   },
   "vpc": {
     "securityGroupIds": [],
