@@ -1,0 +1,31 @@
+{
+  "name": "serverless-slack-notifier",
+  "version": "0.0.1",
+  "description": "Notifies Slack about AWS Events",
+  "license": "Apache-2.0",
+   "author": {
+    "name": "Maarten Huijsmans",
+    "email": "maarten@lukin.be",
+    "url": "http://lukin.be"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukin0110/serverless-slack-notifier.git"
+  },
+   "bugs": {
+    "url": "https://github.com/lukin0110/serverless-slack-notifier/issues"
+  },
+  "readmeFilename": "README.md",
+  "keywords": ["serverless", "aws", "slack"],
+  "dependencies": {
+    "aws-sdk": "^2.2.23",
+    "request": "^2.67.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "~0.12.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
