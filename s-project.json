@@ -1,5 +1,8 @@
 {
   "name": "slack-notifier",
   "custom": {},
-  "plugins": []
+  "plugins": [],
+  "s3EventBucket": "dudeBucket",
+  "snsTopicName": "dudeTopic",
+  "slack_webhook": "https://hooks.slack.com/services/T0d3WTDR$/YT(5M3CJ2/29r5s6ANgxyjkZG6tvwABCDE"
 }

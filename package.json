@@ -27,6 +27,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint functions"
+    "lint": "eslint functions",
+    "init": "npm install && cd functions && npm install",
+    "deploy": "serverless resources deploy && serverless function deploy -a && serverless event deploy -a"
   }
 }
