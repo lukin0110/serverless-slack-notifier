@@ -13,19 +13,19 @@ module.exports.handler = function(event, context, cb) {
 
         q.fcall(notify, webhook, message)
             .then(function() {
-                context.succeed('posted to slack');
+                cb(null, {message: 'posted to slack'});
             })
             .fail(function(err) {
                 console.log(err);
-                context.fail(err);
+                cb(err);
             })
             .catch(function(err) {
                 console.log(err);
-                context.fail(err);
+                cb(err);
             })
             .done();
         
     } else {
-        context.fail(new Error('No SNS records found'));
+        cb(new Error('No SNS records found'));
     }
 };

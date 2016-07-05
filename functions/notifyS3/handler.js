@@ -33,11 +33,11 @@ module.exports.handler = function(event, context, cb) {
         })
         .fail(function(err) {
             console.log(err);
-            context.fail(err);
+            cb(err);
         })
         .catch(function(err) {
             console.log(err);
-            context.fail(err);
+            cb(err);
         })
         .done();
 };
