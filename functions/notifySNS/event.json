@@ -1,0 +1,22 @@
+{
+    "Records": [
+        {
+            "EventSource": "aws:sns",
+            "EventVersion": "1.0",
+            "EventSubscriptionArn": "arn:aws:sns:eu-west-1:453115457845:dummy:851be55c-dcac-4945-8d0f-55309e9d8866",
+            "Sns": {
+                "Type": "Notification",
+                "MessageId": "2dcb7c7f-6dfd-570d-84e3-338aee44b8c9",
+                "TopicArn": "arn:aws:sns:eu-west-1:483115737820:dummy",
+                "Subject": null,
+                "Message": "A question that sometimes drives me hazy: am I or are the others crazy?",
+                "Timestamp": "2016-07-05T09:44:25.950Z",
+                "SignatureVersion": "1",
+                "Signature": "OVbqco5pWSt+lYZIUX1YoTFVnPUvSfwbNWchzAeys78A7VEkFh2Opsvk2o6AamWC32odZDHtnnOHYSX+s2SoonwcDdFwHSq9yKJRtPPwWkUQYUdhpDyv5x1ihz1A43me0LRURhusDnNZu2Bp7+OSR8FY5mY4BelZFHkC3QSOvdUaylMRy3wlxA1zpbseqf/dJpwze0Ng+QxttsrorZden4Dm9N1R9E2WB9ENxPfJDPwIsv7BX76jsyjQhVLeEujvfJMhTekX1kBIUl+55b515hO02E/MBoG+I8BRjYNVqsMpM6GodHviVgrw2VBxssIEs572BuigHcg5KonUkRX4Lw==",
+                "SigningCertUrl": "https://sns.eu-west-1.amazonaws.com/SimpleNotificationService-bb750dd426d95ee9390147a5624348ee.pem",
+                "UnsubscribeUrl": "https://sns.eu-west-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:eu-west-1:483115737820:dummy:851be55c-dcac-4945-8d0f-06309e9d7321",
+                "MessageAttributes": {}
+            }
+        }
+    ]
+}
