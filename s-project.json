@@ -1,5 +1,5 @@
 {
-  "name": "slack-notifier",
+  "name": "serverless-slack-notifier",
   "custom": {},
   "plugins": [],
   "s3EventBucket": "dudeBucket",

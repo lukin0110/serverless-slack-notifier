@@ -27,12 +27,12 @@ $ sudo npm install serverless -g
 
 ### 3. Download the project
 ```
-$ serverless project install https://github.com/lukin0110/serverless-slack-notifier
+$ serverless project install serverless-slack-notifier
 ```
 
 ### 4. Configure the project
 
-Open the `_meta/variables/s-variables-common.json` file and configure the following 3 parameters:
+Open the `_meta/variables/s-variables-common.json` file and add/configure the following 3 parameters:
 ```
   "s3EventBucket": "dudeBucket",
   "snsTopicName": "dudeTopic",
