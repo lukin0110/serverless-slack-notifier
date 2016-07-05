@@ -15,7 +15,6 @@
   "bugs": {
     "url": "https://github.com/lukin0110/serverless-slack-notifier/issues"
   },
-  "readmeFilename": "README.md",
   "keywords": [
     "serverless",
     "aws",
@@ -27,6 +26,7 @@
     "node": "~0.12.8"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint functions"
   }
 }

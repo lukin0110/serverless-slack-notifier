@@ -5,14 +5,26 @@ const q = require('q');
 const notify = require('../slack.js').notify;
 
 module.exports.handler = function(event, context, cb) {
-    // console.log('Event received: ' + JSON.stringify(event));
-    
-    // Get the object from the event and show its content type
-    let bucket = event.Records[0].s3.bucket.name;
-    let key = decodeURIComponent(event.Records[0].s3.object.key.replace(/\+/g, ' '));
-    let url = s3.getSignedUrl('getObject', {Bucket: bucket, Key: event.Records[0].s3.object.key});
-    let text = 'S3 Object created: <' + url + '|' + key + '>';
+    console.log('Event received: ' + JSON.stringify(event));
     let webhook = process.env.SLACK_WEBHOOK;
+    let text;
+
+    // Get the object from the event and show its content type
+    let record = event.Records[0];
+    let eventName = record['eventName'];
+    let bucket = record.s3.bucket.name;
+    let key = decodeURIComponent(record.s3.object.key.replace(/\+/g, ' '));
+
+    if(eventName.startsWith('ObjectCreated')) {
+        let url = s3.getSignedUrl('getObject', {Bucket: bucket, Key: record.s3.object.key});
+        text = 'S3 Object created: <' + url + '|' + key + '>';
+
+    } else if(eventName.startsWith('ObjectRemoved')) {
+        text = 'S3 Object removed: ' + bucket + '/' + key;
+        
+    } else {
+        text = 'S3: unsupported action';
+    }
     
     q.fcall(notify, webhook, text)
         .then(function() {

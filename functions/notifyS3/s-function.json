@@ -18,7 +18,10 @@
       "type": "s3",
       "config": {
         "bucket": "${eventBucket}",
-        "bucketEvents": ["s3:ObjectCreated:*"]
+        "bucketEvents": [
+          "s3:ObjectCreated:*",
+          "s3:ObjectRemoved:*"
+        ]
       }
     }
   ],
@@ -26,7 +29,6 @@
     "SERVERLESS_PROJECT": "${project}",
     "SERVERLESS_STAGE": "${stage}",
     "SERVERLESS_REGION": "${region}",
-
     "SLACK_WEBHOOK": "${slack_webhook}"
   },
   "vpc": {
