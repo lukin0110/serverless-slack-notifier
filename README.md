@@ -1,6 +1,7 @@
 # serverless-slack-notifier
 
-This is a Serverless project that offers 2 AWS Lambda functions that notifies a Slack channel about S3 & SNS events.
+This is a [Serverless](https://serverless.com) project that offers 2 AWS Lambda functions that notifies a Slack channel 
+about S3 & SNS events.
 
 The best part is there are no servers required for this. You get charged only when its called and you don't need to 
 worry about scaling :)
