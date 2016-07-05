@@ -9,7 +9,6 @@ module.exports.handler = function(event, context, cb) {
     let webhook = process.env.SLACK_WEBHOOK;
     let text;
 
-    // Get the object from the event and show its content type
     let record = event.Records[0];
     let eventName = record['eventName'];
     let bucket = record.s3.bucket.name;
