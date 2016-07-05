@@ -1,7 +1,7 @@
 {
   "name": "serverless-slack-notifier",
   "version": "0.0.1",
-  "description": "Lambda functions for slack notifications about AWS Events",
+  "description": "Get notified about AWS Events in a Slack channel",
   "license": "Apache-2.0",
   "author": {
     "name": "Maarten Huijsmans",
