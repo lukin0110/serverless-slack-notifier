@@ -6,8 +6,8 @@ about S3 & SNS events.
 The best part is there are no servers required for this. You get charged only when its called and you don't need to 
 worry about scaling :)
 
-It requires that you have an AWS account and credentials that have **Full Admin rights** to the AWS since the 
-deployment touches a variety of AWS resources.
+You need an AWS account and credentials that have **full Admin rights** to the AWS SDK since the deployment touches a
+ variety of AWS resources.
 
 ## Features
 
